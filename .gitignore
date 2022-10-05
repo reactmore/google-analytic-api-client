@@ -1,0 +1,5 @@
+vendor/*
+public/*
+composer.lock
+index.php
+google_analytic_services.json

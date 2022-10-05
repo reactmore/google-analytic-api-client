@@ -1,0 +1,26 @@
+{
+    "name": "reactmore/google-analytic-api-client",
+    "description": "Google Analytic Api Client PHP ",
+    "autoload": {
+        "psr-4": {
+            "Reactmore\\GoogleAnalyticApi\\": "app/"
+        }
+    },
+    "require": {
+        "php": "^7.0 | ^8.0",
+        "psr/http-message": "^1.0",
+        "google/apiclient": "^2.7",
+        "nesbot/carbon": "^2.0",
+        "vlucas/phpdotenv": "^5.4"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.6",
+        "guzzlehttp/guzzle": "^6.2",
+        "phpunit/phpunit": "^9.5",
+        "mockery/mockery": "^1.4",
+        "hamcrest/hamcrest-php": "^2.0"
+    },
+    "suggest": {
+        "guzzlehttp/guzzle": "^6.2"
+    }
+}
