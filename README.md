@@ -103,7 +103,7 @@ array(30) {
 Explore Query on this App [ga-dev-tools](https://ga-dev-tools.web.app/query-explorer/)
 
 # Screenshot
-![Backend](https://raw.githubusercontent.com/reactmore/google-analytic-api-client/master/screenshot.png)
+![Backend](https://raw.githubusercontent.com/reactmore/google-analytic-api-client/master/screenshoot.png)
 
 
 
