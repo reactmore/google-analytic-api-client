@@ -1,6 +1,23 @@
 {
     "name": "reactmore/google-analytic-api-client",
-    "description": "Google Analytic Api Client PHP ",
+    "type": "library",
+    "description": "A PHP package to retrieve Google Analytics data",
+    "homepage": "https://github.com/reactmore/google-analytic-api-client",
+    "version": "1.0.0",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andry Setyoso",
+            "homepage": "https://github.com/reactmore"
+        }
+    ],
+    "keywords": [
+        "reactmore",
+        "google-analytic-api-client",
+        "php",
+        "Google Analytic",
+        "Google Analytic API"
+    ],
     "autoload": {
         "psr-4": {
             "Reactmore\\GoogleAnalyticApi\\": "app/"
@@ -22,6 +39,5 @@
     },
     "suggest": {
         "guzzlehttp/guzzle": "^6.2"
-    },
-    "license": "MIT"
+    }
 }
