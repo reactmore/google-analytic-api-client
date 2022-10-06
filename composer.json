@@ -22,5 +22,6 @@
     },
     "suggest": {
         "guzzlehttp/guzzle": "^6.2"
-    }
+    },
+    "license": "MIT"
 }
