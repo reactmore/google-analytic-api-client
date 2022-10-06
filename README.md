@@ -25,24 +25,28 @@ $Analytics = new Analytics();
 // or manual
 $Analytics = new Analytics([
 'view_id' => 21312312313,
-'service_credentials_json' => 'google_analytic_services.json'
+'service_credentials_json' => 'path/to/google_analytic_services.json'
 ]);
 
 echo '<pre>';
 var_dump($Analytics->Fetching()->fetchUserTypes(Period::days(7)));
 echo '</pre>';
 
-
 // Method 
 $Analytics = new Analytics();
+// Fetch Users and New Users
 $Analytics->Fetching()->fetchUserTypes(Period::days(7));
+// Get Data Top Browser used visitor
 $Analytics->Fetching()->fetchTopBrowsers(Period::days(7));
+// Get Data Refferer Page
 $Analytics->Fetching()->fetchTopReferrers(Period::days(7));
+// Populer Pages
 $Analytics->Fetching()->fetchMostVisitedPages(Period::days(7));
+// Get Visitor and Pageviews
 $Analytics->Fetching()->fetchTotalVisitorsAndPageViews(Period::days(7));
 ```
 
-Output Array : 
+Example Output Array : 
 ```array
 array(2) {
   [0]=>
@@ -61,6 +65,46 @@ array(2) {
   }
 }
 ```
+
+```php
+// Custom Query
+$Analytics->Fetching()->performQuery($period, $metrix, $other = array());
+// Example
+$Analytics->Fetching()->performQuery(Period::days(7), 'ga:sessions', ['dimensions' => 'ga:country', 'sort' => '-ga:sessions'])->getRows();
+```
+
+Example Output Raw Array : 
+```
+array(30) {
+  [0]=>
+  array(2) {
+    [0]=>
+    string(9) "Indonesia"
+    [1]=>
+    string(4) "3534"
+  }
+  [1]=>
+  array(2) {
+    [0]=>
+    string(11) "Afghanistan"
+    [1]=>
+    string(2) "96"
+  }
+  [2]=>
+  array(2) {
+    [0]=>
+    string(13) "United States"
+    [1]=>
+    string(2) "88"
+  } 
+}
+```
+
+Explore Query on this App [ga-dev-tools](https://ga-dev-tools.web.app/query-explorer/)
+
+# Screenshot
+![Backend](https://raw.githubusercontent.com/reactmore/google-analytic-api-client/master/screenshot.png)
+
 
 
 
