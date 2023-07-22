@@ -31,6 +31,14 @@
         "nesbot/carbon": "^2.0",
         "vlucas/phpdotenv": "^5.4"
     },
+    "scripts": {
+        "pre-autoload-dump": "Google\\Task\\Composer::cleanup"
+    },
+    "extra": {
+        "google/apiclient-services": [
+            "Analytics"
+        ]
+    },
     "require-dev": {
     },
     "suggest": {"guzzlehttp/guzzle": "^6.2"
