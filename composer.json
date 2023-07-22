@@ -3,7 +3,7 @@
     "type": "library",
     "description": "A PHP package to retrieve Google Analytics data",
     "homepage": "https://github.com/reactmore/google-analytic-api-client",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "license": "MIT",
     "authors": [
         {
